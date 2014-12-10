@@ -69,8 +69,10 @@ int main(int argc, char **argv)
 
 	//			case 't':
 
-	printf("Test initialted!\n");
-	ADC_simulator();
+	if(strcmp(argv[1],"test") == 0){
+		printf("Test initialted!\n");
+		ADC_simulator();
+	}
 
 	//				break;
 	//			default:
@@ -116,7 +118,6 @@ int main(int argc, char **argv)
 
 
 	}
-
-	fclose(gp);
-	return 0;
+fclose(gp);
+return 0;
 }
